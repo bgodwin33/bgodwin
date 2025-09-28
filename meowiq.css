@@ -20,9 +20,10 @@ body {
   grid-template-areas:
     "header header"
     "nav main"
+    "nav banner"
     "footer footer";
-  grid-template-columns: 140px auto;
-  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto auto; /* added banner row */
   min-height: 100vh;
 }
 
@@ -88,10 +89,6 @@ main {
   grid-area: main;
   padding: 20px;
   background: #fff;
-   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100%;
 }
 
 main h2 {
@@ -187,17 +184,12 @@ main h3 {
 }
 
 .cat-banner {
+  grid-area: banner;
   background: url("images/catbanner.png") repeat-x center bottom;
-  background-size: auto 240px;  
+  background-size: auto 240px;
   width: 100%;
-  min-height: 260px;             
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: var(--text);
-  text-align: center;
-  padding: 40px 20px;
+  min-height: 260px;
+  background-color:  #fff;
 }
 
 footer {
