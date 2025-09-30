@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="MeowIQ: Smart cat care guides, behavior tips, product reviews, and resources for happy, healthy cats.">
+  <meta name="keywords" content="cats, cat care, cat behavior, feeders, fountains, litter robot, resources, MeowIQ">
+  <title>MeowIQ | Poll</title>
+  <link rel="stylesheet" href="meowiq.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <div class="logo-area">
+        <img src="images/meowIQ_logo_bigger.png" alt="MeowIQ Logo" class="logo">
+      </div>
+      <div class="title-area">
+        <h1>Where Nine Lives Get Smarter</h1>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="care.html">Care</a></li>
+        <li><a href="behavior.html">Behavior</a></li>
+        <li><a href="cat-tech.html">Cat Tech</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="poll.html" class="active">Poll</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Favorite Cat Poll</h2>
+      <p>We would love to know more about your preferences as a cat lover. Please take a moment to answer this short poll!</p>
+      <form class="poll-form" action="thankyou.html" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="coat">Favorite Coat Type:</label>
+        <select id="coat" name="coat" required>
+          <option value="">--Please choose an option--</option>
+          <option value="Short">Short Hair</option>
+          <option value="Long">Long Hair</option>
+          <option value="Hairless">Hairless</option>
+          <option value="Any">Doesn’t matter</option>
+        </select>
+
+        <label for="trait">Favorite Personality Trait:</label>
+        <select id="trait" name="trait" required>
+          <option value="">--Please choose an option--</option>
+          <option value="Playful">Playful</option>
+          <option value="Cuddly">Cuddly</option>
+          <option value="Independent">Independent</option>
+        </select>
+
+        <fieldset>
+          <legend>Would you adopt from a shelter?</legend>
+          <label><input type="radio" name="shelter" value="Yes" required> Yes</label>
+          <label><input type="radio" name="shelter" value="No"> No</label>
+          <label><input type="radio" name="shelter" value="Maybe"> Maybe</label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <div class="cat-banner"></div>
+    <footer>
+  <p>© 2025 MeowIQ | 
+    <a href="mailto:info@meowiq.com">Email Us</a> | 
+    Contact Info | Social Media Links
+  </p>
+</footer>
+  </div>
+</body>
+</html>
